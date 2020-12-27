@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
   <title>rps</title>
-  <body>
-    <header>
-      CHALLANGE THE COMPUTER
-    </header>
-  <div class="scoreBoard">
-  <span id="userLabel">USER</span> <span id="userScore">0</span> <span id="compScore">0</span> <span id="compLabel">COMP</span>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+<header>
+  <h1>CHALLENGE THE COMPUTER</h1>
+</header>
+<div class="scoreBoard">
+  <div id="userBadge" class="badge">USER</div>
+  <div id="compBadge" class="badge">COMP</div>
+  <span id="userScore">0</span> : <span id="compScore">0</span>
+</div>
+<div class="scoreMessage">
+  <p id="scoreResult">user beats comp</p>
+</div>
+<div class="choices">
+  <div id="r" class="choice">
+    <img alt="" src="rpsIMG/rock.png">
   </div>
-  <div class="scoreMessage">
-    <p id="scoreMessage">user beats comp</p> 
+  <div id="p" class="choice">
+    <img alt="" src="rpsIMG/paper.png">
   </div>
-  <div class="choices">
-  <div id="r"><img src="C:\Users\thagana\Pictures\rpsIMG\rock.PNG"></div>
-  <div id="p"><img src="C:\Users\thagana\Pictures\rpsIMG\paper.PNG"></div>
-  <div id="s"><img src="C:\Users\thagana\Pictures\rpsIMG\scissor.PNG "></div>
+  <div id="s" class="choice">
+    <img alt="" src="rpsIMG/scissor.png">
   </div>
-  </body>
+</div>
+<p id="actionMessage">Make Your Move</p>
+<script src="rps.js" charset="utf-8"></script>
+</body>
 </html>
